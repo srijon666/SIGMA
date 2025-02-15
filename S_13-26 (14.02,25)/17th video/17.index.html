@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element selector👇*/
+        /* div{background-color: red;} :- this makes all the entities under element div red (not preffered in professional work*/
+        /* using class selector👇*/
+        .red {
+            background-color: red;
+        }
+
+        /* usind id selector👇*/
+        #green {
+            background-color: green;
+        }
+
+        /* Child selector👇 applicable when directly under the element*/
+        div>p {
+            color: violet;
+            background-color: blueviolet;
+        }
+
+        /*Descendent Selector👇 applicable whenever wether it is directly under that element or it is followed by other elemerts as well. For example:- 
+    <div class="red">
+        im a div
+        <article>
+             <p>im a  para inside div</p>
+        </article>
+    </div>*/
+        div p {
+            color: antiquewhite;
+            background-color: black;
+        }
+        /* Universal selector👇*/
+        *{margin: 0;padding: 0;}
+        /* pseudo selector */
+        a:visited{color: yellowgreen;}
+        a:link{color: red;}
+        a:active{background-color: aquamarine;}
+        a:hover{background-color: yellow;}
+        p:first-child{background-color: aqua;}
+        </style>
+</head>
+
+<body>
+    <main class="one">
+    <p>im first</p>
+    <p>im second</p></main>
+    <div class="red">
+        im a div
+        <article>
+            <p>im a para inside div</p>
+        </article>
+    </div>
+    <div id="green">
+        im another div
+    </div>
+    <a href="https://www.facebook.com">Go to Faceboook</a>
+</body>
+
+</html>
